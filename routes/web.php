@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'OvertimeController@index');
+Route::get('/locations', 'OvertimeController@locations');
+Route::get('/users', 'OvertimeController@users');
+Route::get('/time', 'OvertimeController@timePunches');
